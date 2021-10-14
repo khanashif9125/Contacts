@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane fx:id="contact" prefHeight="500" prefWidth="724.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ContactControler">
+   <header>
+      <VBox prefHeight="502.0" prefWidth="724.0">
+         <children>
+            <TableView fx:id="table" prefHeight="541.0" prefWidth="724.0">
+              <columns>
+                <TableColumn fx:id="nam" prefWidth="189.19997560977936" text="Name" />
+                <TableColumn fx:id="phn" prefWidth="184.20001220703125" text="Phone Number" />
+                  <TableColumn fx:id="eml" prefWidth="174.20004272460938" text="Email Address" />
+                  <TableColumn fx:id="birth" prefWidth="173.800048828125" text="Birthday" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Addcontact" prefHeight="26.0" prefWidth="94.0" text="Add Contact">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#Editcontact" prefHeight="26.0" prefWidth="95.0" text="Edit Contact">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#Deletecontact" prefHeight="26.0" prefWidth="96.0" text="Delete Contact">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="signo" cancelButton="true" mnemonicParsing="false" onAction="#signout" text="SignOut">
+                     <HBox.margin>
+                        <Insets left="330.0" top="5.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </header>
+</DialogPane>

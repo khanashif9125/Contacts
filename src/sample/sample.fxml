@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="mainGridPane" alignment="center" hgap="10" prefHeight="653.0" prefWidth="931.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+      <TitledPane alignment="CENTER" animated="false" prefHeight="431.0" prefWidth="619.0" text="Login to Access Contacts" GridPane.rowIndex="1">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="454.0">
+               <children>
+                  <Text layoutX="71.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID :" wrappingWidth="86.13671112060547">
+                     <font>
+                        <Font name="Bell MT Bold" size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" wrappingWidth="98.13671112060547">
+                     <font>
+                        <Font name="Bell MT Bold" size="19.0" />
+                     </font></Text>
+                  <Button layoutX="133.0" layoutY="178.0" mnemonicParsing="false" onAction="#login" onDragEntered="#login" prefHeight="39.0" prefWidth="84.0" text="Login" />
+                  <PasswordField fx:id="password" layoutX="174.0" layoutY="103.0" />
+                  <TextField fx:id="email" layoutX="174.0" layoutY="42.0" />
+                  <Label fx:id="success" layoutX="95.0" layoutY="148.0" prefHeight="18.0" prefWidth="149.0" />
+               </children></AnchorPane>
+        </content>
+         <font>
+            <Font name="Brush Script MT Italic" size="24.0" />
+         </font>
+      </TitledPane>
+      <TitledPane alignment="BOTTOM_CENTER" animated="false" prefHeight="439.0" prefWidth="629.0" text="Signup if you dont have an Account" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+        <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="419.0" prefWidth="464.0" GridPane.vgrow="ALWAYS" />
+            <GridPane hgap="10" vgap="10">
+
+                <Label text="Full Name: " GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="signname" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Phone Number: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="signnumber" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="User ID: " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="signemail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Password: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <PasswordField fx:id="signpass" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label fx:id="setsuccess" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <Button onMouseClicked="#Signup" text="Signup" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.rowSpan="2" />
+            <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+
+            </GridPane>
+
+
+        </content>
+         <font>
+            <Font name="Brush Script MT Italic" size="24.0" />
+         </font>
+
+      </TitledPane>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+    </GridPane>
